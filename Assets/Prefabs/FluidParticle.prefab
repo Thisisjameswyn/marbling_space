@@ -133,7 +133,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 3
   m_Material: {fileID: 6200000, guid: 52740245d8817ec4e82b3eb4326a5d8f, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -151,7 +151,7 @@ PointEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 128
-  m_ForceMagnitude: -100
+  m_ForceMagnitude: -10
   m_ForceVariation: 0
   m_DistanceScale: 1
   m_ForceSource: 0
