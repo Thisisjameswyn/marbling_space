@@ -20,7 +20,7 @@ public class GridComponent : MonoBehaviour
     GetComponent<MeshFilter>().mesh = mesh = new Mesh();
     vertices = new Vector3[(xSize + 1) * (ySize + 1)];
     for (int i = 0, y = 0; y <= ySize; y++) //Grab x y coords and build grid
-    { 
+    {
       for (int x = 0; x <= xSize; x++, i++)
       {
         vertices[i] = new Vector3(x, y);
