@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2073426138261894093}
   - component: {fileID: 590080109381912148}
   - component: {fileID: 3522661179859554660}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: PainterParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
