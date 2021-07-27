@@ -12764,6 +12764,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bba8af839ed290540a6b00b8b76675b3, type: 3}
+--- !u!1 &562121460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2073426138261894090, guid: 3542d29cdf1376d45abf419162d77732, type: 3}
+  m_PrefabInstance: {fileID: 3522661178982251189}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &563335839 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3181031981985637879, guid: bba8af839ed290540a6b00b8b76675b3, type: 3}
@@ -22161,6 +22166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
+  - component: {fileID: 963194231}
   - component: {fileID: 963194230}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
@@ -22281,6 +22287,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fluidParticle: {fileID: 3181031981985637873, guid: bba8af839ed290540a6b00b8b76675b3, type: 3}
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14b8323089be074b89a17b27fb06985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  painterParticle: {fileID: 562121460}
 --- !u!1001 &964205023
 PrefabInstance:
   m_ObjectHideFlags: 0
