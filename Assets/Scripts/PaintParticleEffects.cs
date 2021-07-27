@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class FluidPaintComponent : MonoBehaviour
 {
-  [SerializeField]
-  float force = 10f;
   Rigidbody2D myRb;
   // Start is called before the first frame update
   void Start()
@@ -14,11 +12,11 @@ public class FluidPaintComponent : MonoBehaviour
   }
 
   // Update is called once per frame
-  void Update()
-  {
-    Vector2 controlInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-    myRb.AddForce(controlInput * force);
-  }
+  // void Update()
+  // {
+  //   Vector2 controlInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+  //   myRb.AddForce(controlInput * force);
+  // }
 
   private void OnTriggerEnter2D(Collider2D other)
   {

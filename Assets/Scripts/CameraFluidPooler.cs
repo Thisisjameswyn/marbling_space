@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FluidPoolDraw : MonoBehaviour
+public class CameraFluidPooler : MonoBehaviour
 {
   Camera cam;
   [SerializeField]
