@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class FluidParticleParams : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  Rigidbody2D myRb;
+  [SerializeField]
+  float KinematicTime;
+  private void Awake()
+  {
+    myRb = this.GetComponent<Rigidbody2D>();
+  }
 
-    // Update is called once per frame
-    void Update()
+  // Update is called once per frame
+  void Update()
+  {
+    if (myRb.isKinematic == true)
     {
-        
+      Timer();
     }
+  }
+
+  void Timer()
+  {
+    Debug.Log("called");
+    float _timer = 0;
+    _timer += Time.deltaTime;
+    if (_timer >= KinematicTime)
+    {
+      myRb.isKinematic = true;
+    }
+  }
 }
