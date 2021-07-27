@@ -17,3 +17,17 @@ Sure, there are two primary methods of simulating fluids that I read up on, part
 This might be the solution
 
   https://www.youtube.com/watch?v=_8v4DRhHu2g
+
+
+//allow user to select a set of complimentary colors to draw with
+//on mouse wheel scroll change between the four colors
+
+//have an array of 4 colors
+//add each color to the array
+//have ui element that allows for 4-5 different choices or moods
+//array for moods holds each of the moods which holds 4 colors - array of array
+//
+
+
+
+//Array myArray = []

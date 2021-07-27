@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2922060419403016535}
   - component: {fileID: 3774314040810334927}
   - component: {fileID: 2922060419403016532}
-  - component: {fileID: 335647654903319549}
   m_Layer: 8
   m_Name: PainterParticle_Kinematic
   m_TagString: Untagged
@@ -139,16 +138,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &335647654903319549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2922060419403016531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64663e90b8acdaa48856615189ec79b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  force: 50
