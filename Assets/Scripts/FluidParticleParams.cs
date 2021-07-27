@@ -6,29 +6,26 @@ public class FluidParticleParams : MonoBehaviour
 {
   Rigidbody2D myRb;
   [SerializeField]
-  float KinematicTime;
+  float sleepTime;
+  float _timer = 0;
   private void Awake()
   {
     myRb = this.GetComponent<Rigidbody2D>();
+    myRb.WakeUp();
   }
 
   // Update is called once per frame
   void Update()
   {
-    if (myRb.isKinematic == true)
+    if (myRb.IsAwake())
     {
-      Timer();
-    }
-  }
-
-  void Timer()
-  {
-    Debug.Log("called");
-    float _timer = 0;
-    _timer += Time.deltaTime;
-    if (_timer >= KinematicTime)
-    {
-      myRb.isKinematic = true;
+      _timer += Time.deltaTime;
+      if (_timer >= sleepTime)
+      {
+        myRb.Sleep();
+        Debug.Log(myRb.IsSleeping());
+        _timer = 0;
+      }
     }
   }
 }

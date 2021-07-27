@@ -19,4 +19,13 @@ public class FluidPaintComponent : MonoBehaviour
     Vector2 controlInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
     myRb.AddForce(controlInput * force);
   }
+
+  private void OnTriggerEnter2D(Collider2D other)
+  {
+    if (other.gameObject.tag == "fluid")
+    {
+      Rigidbody2D fluidRB = other.GetComponent<Rigidbody2D>();
+      fluidRB.WakeUp();
+    }
+  }
 }

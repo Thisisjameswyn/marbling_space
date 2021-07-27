@@ -24,13 +24,4 @@ public class PaintParticleMovement : MonoBehaviour
       painterParticle.transform.position = worldPosition;
     }
   }
-
-  private void OnTriggerEnter2D(Collider2D other)
-  {
-    if (other.gameObject.tag == "fluid")
-    {
-      Rigidbody2D fluidRB = other.GetComponent<Rigidbody2D>();
-      fluidRB.isKinematic = false;
-    }
-  }
 }
