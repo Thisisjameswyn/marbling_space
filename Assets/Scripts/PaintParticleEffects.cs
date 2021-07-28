@@ -11,13 +11,6 @@ public class FluidPaintComponent : MonoBehaviour
     myRb = this.GetComponent<Rigidbody2D>();
   }
 
-  // Update is called once per frame
-  // void Update()
-  // {
-  //   Vector2 controlInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-  //   myRb.AddForce(controlInput * force);
-  // }
-
   private void OnTriggerEnter2D(Collider2D other)
   {
     if (other.gameObject.tag == "fluid")
