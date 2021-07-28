@@ -23,7 +23,6 @@ public class FluidParticleParams : MonoBehaviour
       if (_timer >= sleepTime)
       {
         myRb.Sleep();
-        Debug.Log(myRb.IsSleeping());
         _timer = 0;
       }
     }
