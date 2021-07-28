@@ -71,6 +71,14 @@ public class CameraPaintController : MonoBehaviour
     {
       currentColors[i] = colorPallets[palletArrayPos, i];
     }
-    palletArrayPos++;
+    currentColor = currentColors[0];
+    if (palletArrayPos < 7)
+    {
+      palletArrayPos++;
+    }
+    else
+    {
+      palletArrayPos = 0;
+    }
   }
 }
