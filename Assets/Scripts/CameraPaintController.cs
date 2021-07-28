@@ -11,8 +11,6 @@ public class CameraPaintController : MonoBehaviour
   Color32 currentColor;
   Color32[] currentColors = new Color32[5];
 
-
-
   Color32[,] colorPallets =
   {
     { new Color32(217, 162, 130, 255), new Color32(140, 89, 77, 255), new Color32(166, 166, 166, 255), new Color32(64, 64, 64, 255), new Color32(13, 13, 13, 255) },
@@ -26,6 +24,12 @@ public class CameraPaintController : MonoBehaviour
     { new Color32(87, 67, 1, 255), new Color32(168, 99, 38, 255), new Color32(141, 147, 101, 255), new Color32(217, 178, 156, 255), new Color32(140, 3, 3, 255) },
 
     { new Color32(40, 27, 36, 255), new Color32(60, 75, 77, 255), new Color32(242, 171, 48, 255), new Color32(216, 125, 13, 255), new Color32(137, 10, 3, 255) },
+
+    { new Color32(2, 115, 104, 255), new Color32(3, 64, 1, 255), new Color32(13, 13, 13, 255), new Color32(155, 129, 72, 255), new Color32(217, 162, 130, 255) },
+
+    { new Color32(224, 192, 211, 255), new Color32(199, 132, 175, 255), new Color32(115, 147, 194, 255), new Color32(182, 199, 221, 255), new Color32(239, 223, 230, 255) },
+
+    { new Color32(242, 109, 133, 255), new Color32(242, 167, 202, 255), new Color32(247, 220, 234, 255), new Color32(240, 240, 242, 255), new Color32(249, 249, 249, 255) },
 
     { new Color32(31, 43, 133, 255), new Color32(203, 231, 250, 255), new Color32(107, 32, 132, 255), new Color32(167, 219, 200, 255), new Color32(102, 199, 167, 255) }
   };
