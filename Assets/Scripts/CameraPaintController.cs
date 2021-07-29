@@ -11,6 +11,8 @@ public class CameraPaintController : MonoBehaviour
   Color32 currentColor;
   Color32[] currentColors = new Color32[5];
 
+  int brushSize = 1;
+
   Color32[,] colorPallets =
   {
     { new Color32(217, 162, 130, 255), new Color32(140, 89, 77, 255), new Color32(166, 166, 166, 255), new Color32(64, 64, 64, 255), new Color32(13, 13, 13, 255) },
@@ -69,7 +71,6 @@ public class CameraPaintController : MonoBehaviour
         colorArrayPos = 0;
       }
       currentColor = currentColors[colorArrayPos];
-      Debug.Log(currentColors[colorArrayPos]);
     }
     else if (Input.mouseScrollDelta.y < 0)
     {
@@ -82,7 +83,6 @@ public class CameraPaintController : MonoBehaviour
         colorArrayPos = currentColors.Length - 1;
       }
       currentColor = currentColors[colorArrayPos];
-      Debug.Log(currentColors[colorArrayPos]);
     }
   }
 

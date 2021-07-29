@@ -8,6 +8,6 @@ public class SceneWipe : MonoBehaviour
   // Start is called before the first frame update
   public void RestartScene()
   {
-    SceneManager.LoadScene("SampleScene");
+    SceneManager.LoadScene("TitleScene");
   }
 }
