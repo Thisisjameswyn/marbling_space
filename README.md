@@ -41,27 +41,7 @@ Is there anything else you'd like your instructor to know?
 
 Not that I can think of?
 
-
-## Description
-
-This application will allow th euser to draw out pools of color and then control color flow through direct manipulation of the playspace physics
-
-## Setup and Use
-
-
-### Installation
-
-
-### Build and Run
-
-
-## Known Bugs
-
-
-## Technologies Used
-
-
-### License
+This application will allow the user to draw out pools of color and then control color flow through direct manipulation of the playspace physics
 
 MIT
 

@@ -10,9 +10,6 @@ public class CameraPaintController : MonoBehaviour
   Renderer paintParticleRenderer;
   Color32 currentColor;
   Color32[] currentColors = new Color32[5];
-
-  int brushSize = 1;
-
   Color32[,] colorPallets =
   {
     { new Color32(217, 162, 130, 255), new Color32(140, 89, 77, 255), new Color32(166, 166, 166, 255), new Color32(64, 64, 64, 255), new Color32(13, 13, 13, 255) },
@@ -38,16 +35,13 @@ public class CameraPaintController : MonoBehaviour
 
   int colorArrayPos = 0;
   int palletArrayPos = 0;
-  // Start is called before the first frame update
   void Start()
   {
-    // Debug.Log(colorPallets.GetLength(0));
     cam = this.GetComponent<Camera>();
     ColorSwap();
     currentColor = currentColors[0];
   }
 
-  // Update is called once per frame
   void Update()
   {
     if (Input.GetMouseButton(1))
